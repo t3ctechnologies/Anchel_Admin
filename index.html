@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/fcb2f222.vendor.css">
+  <link rel="stylesheet" href="styles/11949f55.main.css" media="screen">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <!-- <link rel="icon" href="favicon.png" type="image/png"> -->
+
+  <body class="skin-black fixed" x-ng-app="linshareAdminApp" x-ng-cloak x-ng-controller="LoginFormCtrl">
+    <!-- Navbar  =====================================-->
+    <header class="header">
+      <a href="index.html" class="ls-logo"></a>
+      <nav class="navbar navbar-static-top" role="navigation" x-ls-navbar></nav>
+    </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+      <aside class="left-side sidebar-offcanvas" style="min-height: 100%;box-shadow: 0 0 13px rgba(0,0,0,.4)">
+        <section class="sidebar" x-ls-sidebar></section>
+        <div class="product-version" x-ng-show="userDomain">
+          <p style="margin-bottom: 0">{{ 'COMMON.SIDEBAR.PRODUCT_VERSION' | translate }} : {{productVersion}}</p>
+          <p>{{ 'COMMON.SIDEBAR.CORE_VERSION' | translate }} : {{coreVersion}}</p>
+        </div>
+      </aside>
+      <aside class="right-side" x-ui-view>
+        <!-- Notifications  =====================================-->
+      </aside>
+      <div x-ls-alert-box></div>
+    </div>
+    <!-- Footer =====================================-->
+    <div x-ls-footer></div>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="bower_components/html5shiv/dist/html5shiv-printshiv.js"></script>
+  <![endif]-->
+    <script src="scripts/398535bd.vendor.js"></script>
+    <script src="scripts/b73c020e.scripts.js"></script>
+    <script src="scripts/config.js"></script>

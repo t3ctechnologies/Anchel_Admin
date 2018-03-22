@@ -1,0 +1,397 @@
+#loading-bar,
+#loading-bar-spinner {
+    pointer-events: none;
+    -webkit-pointer-events: none;
+    -webkit-transition: 350ms linear all;
+    -moz-transition: 350ms linear all;
+    -o-transition: 350ms linear all;
+    transition: 350ms linear all
+}
+
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active,
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active {
+    opacity: 0
+}
+
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave,
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave {
+    opacity: 1
+}
+
+#loading-bar .bar {
+    -webkit-transition: width 350ms;
+    -moz-transition: width 350ms;
+    -o-transition: width 350ms;
+    transition: width 350ms;
+    background: #29d;
+    position: fixed;
+    z-index: 10002;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px
+}
+
+#loading-bar .peg {
+    position: absolute;
+    width: 70px;
+    right: 0;
+    top: 0;
+    height: 2px;
+    opacity: .45;
+    -moz-box-shadow: #29d 1px 0 6px 1px;
+    -ms-box-shadow: #29d 1px 0 6px 1px;
+    -webkit-box-shadow: #29d 1px 0 6px 1px;
+    box-shadow: #29d 1px 0 6px 1px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%
+}
+
+#loading-bar-spinner {
+    display: block;
+    position: fixed;
+    z-index: 10002;
+    top: 10px;
+    left: 10px
+}
+
+#loading-bar-spinner .spinner-icon {
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #29d;
+    border-left-color: #29d;
+    border-radius: 10px;
+    -webkit-animation: loading-bar-spinner 400ms linear infinite;
+    -moz-animation: loading-bar-spinner 400ms linear infinite;
+    -ms-animation: loading-bar-spinner 400ms linear infinite;
+    -o-animation: loading-bar-spinner 400ms linear infinite;
+    animation: loading-bar-spinner 400ms linear infinite
+}
+
+@-webkit-keyframes loading-bar-spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes loading-bar-spinner {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes loading-bar-spinner {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-ms-keyframes loading-bar-spinner {
+    0% {
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes loading-bar-spinner {
+    0% {
+        transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.ui-select-highlight {
+    font-weight: 700
+}
+
+.selectize-control>.selectize-dropdown,
+.selectize-control>.selectize-input>input {
+    width: 100%
+}
+
+.input-group>.ui-select-bootstrap.dropdown {
+    position: static
+}
+
+.input-group>.ui-select-bootstrap>input.ui-select-search.form-control {
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.ui-select-bootstrap>.ui-select-match {
+    text-align: left
+}
+
+.ui-select-bootstrap>.ui-select-match>.caret {
+    position: absolute;
+    top: 45%;
+    right: 15px
+}
+
+.ui-select-bootstrap>.ui-select-choices {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden
+}
+
+.ui-select-match.ng-hide-add,
+.ui-select-search.ng-hide-add {
+    display: none!important
+}
+
+.ng-table th {
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.ng-table th.sortable {
+    cursor: pointer
+}
+
+.ng-table th.sortable div {
+    padding-right: 18px;
+    position: relative
+}
+
+.ng-table th.sortable div:after,
+.ng-table th.sortable div:before {
+    content: "";
+    border-width: 0 4px 4px;
+    border-style: solid;
+    border-color: #000 transparent;
+    visibility: visible;
+    right: 8px;
+    top: 50%;
+    position: absolute;
+    opacity: .3;
+    margin-top: -4px
+}
+
+.ng-table th.sortable div:before {
+    margin-top: 2px;
+    border-bottom: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000
+}
+
+.ng-table th.sortable div:hover:after,
+.ng-table th.sortable div:hover:before {
+    opacity: 1;
+    visibility: visible
+}
+
+.ng-table th.sortable.sort-asc,
+.ng-table th.sortable.sort-desc {
+    background-color: #eee;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .75)
+}
+
+.ng-table th.sortable.sort-asc div:after,
+.ng-table th.sortable.sort-desc div:after {
+    margin-top: -2px
+}
+
+.ng-table th.sortable.sort-asc div:before,
+.ng-table th.sortable.sort-desc div:before {
+    visibility: hidden
+}
+
+.ng-table th.sortable.sort-asc div:after,
+.ng-table th.sortable.sort-asc div:hover:after {
+    visibility: visible;
+    filter: alpha(opacity=60);
+    -khtml-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6
+}
+
+.ng-table th.sortable.sort-desc div:after {
+    border-bottom: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #000;
+    visibility: visible;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    filter: alpha(opacity=60);
+    -khtml-opacity: .6;
+    -moz-opacity: .6;
+    opacity: .6
+}
+
+.ng-table th.filter .input-filter {
+    margin: 0;
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.ng-table+.pagination {
+    margin-top: 0
+}
+
+@media only screen and (max-width:800px) {
+    .ng-table-responsive {
+        border-bottom: 1px solid #999
+    }
+    .ng-table-responsive tr {
+        border-top: 1px solid #999;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999
+    }
+    .ng-table-responsive td:before {
+        position: absolute;
+        padding: 8px;
+        left: 0;
+        top: 0;
+        width: 50%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 700
+    }
+    .ng-table-responsive thead tr th {
+        text-align: left
+    }
+    .ng-table-responsive thead tr.ng-table-filters th {
+        padding: 0
+    }
+    .ng-table-responsive thead tr.ng-table-filters th form>div {
+        padding: 8px
+    }
+    .ng-table-responsive td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left
+    }
+    .ng-table-responsive td:before {
+        content: attr(data-title-text)
+    }
+    .ng-table-responsive,
+    .ng-table-responsive tbody,
+    .ng-table-responsive td,
+    .ng-table-responsive th,
+    .ng-table-responsive thead,
+    .ng-table-responsive tr {
+        display: block
+    }
+}
+
+.toggle-switch {
+    border: 1px solid;
+    cursor: pointer;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+    line-height: 8px;
+    min-width: 100px
+}
+
+.toggle-switch.disabled>div>span.knob {
+    background: #AAA
+}
+
+.toggle-switch span {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 100%;
+    line-height: 20px;
+    padding: 4px;
+    text-align: center;
+    width: 33%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+.toggle-switch>div {
+    position: relative;
+    width: 150%
+}
+
+.toggle-switch .knob {
+    background: red;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #f5f5f5;
+    width: 34%;
+    z-index: 100
+}
+
+.toggle-switch .switch-on {
+    left: 0
+}
+
+.toggle-switch .switch-off {
+    left: -50%
+}
+
+.toggle-switch .switch-left,
+.toggle-switch .switch-right {
+    z-index: 1
+}
+
+.toggle-switch .switch-left {
+    color: #fff;
+    background: #005fcc
+}
+
+.toggle-switch .switch-right {
+    color: #333;
+    background: #f0f0f0
+}
+
+.toggle-switch-animate {
+    transition: left .5s;
+    -o-transition: left .5s;
+    -moz-transition: left .5s;
+    -webkit-transition: left .5s
+}

@@ -1,0 +1,27 @@
+<div>
+    <p>
+        <strong>Domain models</strong>
+    </p>
+    <p>After having
+        <a x-ui-sref="ldapconnection.list">to create a connection to an LDAP directory</a>, it is necessary to create a domain model.
+        <br>
+        <br>This template will allow you to define the correspondence between the first name, last name and email fields. {{ 'COMMON.NAME' |
+        translate }}, and the attributes of your directory. {{ 'COMMON.NAME' | translate }} requires 4 different queries to work properly:</p>
+    <ul>
+        <li>
+            <strong>LQL query
+                <i>(Ldap Query Language)</i> authentication:</strong> query to find a user in the directory during the authentication phase from the identifier that he has entered (email)</li>
+        <li>
+            <strong>LQL query
+                <i>(Ldap Query Language)</i> user :</strong> query to find a user in the directory
+                            when searching for consultation, editing, sharing, ...</li>
+        <li>
+            <strong>LQL query
+                <i>(Ldap Query Language)</i> autocomplete on all attributes:</strong> allows the autocompletion of a
+                            user from the entered motif</li>
+        <li>
+            <strong>LQL query
+                <i>(Ldap Query Language)</i> autocompletion on first and last name:</strong> allows autocompletion of a user
+                            from a couple of reasons: first-name or first-name</li>
+    </ul>
+</div>
