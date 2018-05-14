@@ -2,7 +2,7 @@
     <!-- <span class="motto" x-ng-show="license">Libre &amp; free</span> -->
 </div>
 <div class="col-md-8 navbar-title">
-    <h3>{{ 'COMMON.TITLE' | translate }}</h3>
+    <!-- <h3>{{ 'COMMON.TITLE' | translate }}</h3> -->
 </div>
 <div class="col-md-2 navbar-button">
     <ul class="nav navbar-nav navbar-right">
@@ -11,12 +11,15 @@
                 <i class="fa fa-lg fa-warning"></i>
             </a>
         </li>
-        <li class="">
-            <a x-ui-sref="dashboard" class="dropdown-toggle">
+        <li class="navBarIcons">
+            <a x-ui-sref="dashboard" class="dropdown-toggle" tooltips  tooltip-append-to-body="true"
+            tooltip-close-button="true"
+            tooltip-side="left"
+            tooltip-hide-trigger="click" tooltip-template="Home">
                 <i class="fa fa-lg fa-home"></i>
             </a>
         </li>
-        <li class="language-menu" dropdown is-open="isopen">
+        <li class="language-menu navBarIcons" dropdown is-open="isopen">
             <a href="#" class="dropdown-toggle">
                 <i class="fa fa-lg fa-flag"></i>
             </a>
@@ -29,7 +32,7 @@
                 </li>
             </ul>
         </li>
-        <li class="dropdown user user-menu">
+        <li class="dropdown user user-menu navBarIcons">
             <a href="#" class="dropdown-toggle">
                 <i class="fa fa-lg fa-user"></i>
             </a>
