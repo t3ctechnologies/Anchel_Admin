@@ -5,18 +5,20 @@
         <!-- Header - Begin -->
         <div class="box-header">
           <h3 class="box-title" translate>UPGRADE_TASKS.TITLE</h3>
-          <i class="fa fa-info-circle fa-lg pull-right" data-ng-class="{'active': isCollapsed}"
-             data-ng-click="isCollapsed = !isCollapsed">
-          </i>
-          <button class="clear-btn blue pull-right" data-ng-click="upgradeTasksVm.tableParams.reload()"
+          <button class="clear-btn blue pull-right" data-ng-click="isCollapsed = !isCollapsed"  style="padding:10px;">
+            <i class="fa fa-info-circle fa-lg pull-right" data-ng-class="{'active': isCollapsed}"
+             tooltip="Information">
+            </i>
+          </button>
+            <button class="clear-btn blue pull-right" data-ng-click="upgradeTasksVm.tableParams.reload()"
             style="padding:10px;">
-            <i class="fa fa-refresh fa-lg pull-right"></i>
+            <i class="fa fa-refresh fa-lg pull-right" tooltip="Refresh"></i>
           </button>
         </div>
         <!-- Header - End -->
         <div class="box-body">
           <!-- Documentation - Begin -->
-          <div class="description" collapse="!isCollapsed">
+          <div class="description" collapse="isCollapsed">
             <x-ls-help content="upgradeTasksVm.getHelp()"></x-ls-help>
           </div>
           <!-- Documentation - End -->

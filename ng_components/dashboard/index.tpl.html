@@ -10,18 +10,18 @@
             <div class="col-md-6">
                 
                 <div class="small-box bg-yellow">
-                    <div class="inner">
+                    <div class="inner custInner">
                         <a x-ui-sref="user.list">
-                            <h3>{{'DASHBOARD.MANAGE_USERS_TITLE' | translate}}</h3>
-                            <p>{{'DASHBOARD.MANAGE_USERS_SUB_TITLE' | translate}}</p>
+                            <h3 class="cust">{{'DASHBOARD.MANAGE_USERS_TITLE' | translate}} <span>{{'DASHBOARD.MANAGE_USERS_SUB_TITLE' | translate}}</span></h3>
+                           <!--  <p>{{'DASHBOARD.MANAGE_USERS_SUB_TITLE' | translate}}</p> -->
                         </a>
                     </div>
-                    <div class="icon">
+                    <div class="icon custIcon">
                         <a x-ui-sref="user.list">
                             <i class="fa fa-user"></i>
                         </a>
                     </div>
-                    <a x-ui-sref="user.list" class="small-box-footer">{{'DASHBOARD.MORE_INFO' | translate}}
+                    <a x-ui-sref="user.list" class="small-box-footer cust-small-box-footer ">{{'DASHBOARD.MORE_INFO' | translate}}
                         <i class="fa fa-arrow-circle-right"></i>
                     </a>
                 </div>
