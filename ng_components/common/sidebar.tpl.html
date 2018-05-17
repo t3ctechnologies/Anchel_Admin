@@ -28,7 +28,7 @@
     <accordion-heading>
       <i id="{{tab.name.replace('COMMON.TAB.', 'MENU-')}}" class="fa" x-ng-class="tab.icon"></i>
       <span tooltip-html-unsafe="{{ tab.name  | translate }}" tooltip-placement="right" >&nbsp;{{tab.name | translate}}</span>
-      <i class="fa pull-right" x-ng-class="{'fa-angle-down': tab.isopen, 'fa-angle-left': !tab.isopen}"></i>
+      <i class="fa pull-right" x-ng-class="{'fa-minus': tab.isopen, 'fa-plus': !tab.isopen}"></i>
     </accordion-heading>
     <ul class="treeview-menu">
       <li x-ng-repeat="link in tab.links" >

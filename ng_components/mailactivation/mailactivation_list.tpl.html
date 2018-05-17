@@ -9,7 +9,7 @@
                     <td class="col-md-1" data-title="'MAIL_ACTIVATION.BOX_LIST.TABLE.HEADER_STATUS' | translate" sortable="'enable'">
                         <a x-ui-sref="mailactivation.detail({id: mailActivation.identifier, domainId: mailActivation.domain, view: view})">
                             <span>
-                                <i class="fa fa-check-circle" style="color: #8bc34a" tooltip="{{ 'COMMON.BASIC_FORM.LABEL_ACTIVE' | translate }}"
+                                <i class="fa fa-check-circle" style="color: #89aa42" tooltip="{{ 'COMMON.BASIC_FORM.LABEL_ACTIVE' | translate }}"
                                     x-ng-show="isActivated(mailActivation)"></i>
                                 <i class="fa fa-times-circle" style="color: red" tooltip="{{ 'COMMON.BASIC_FORM.LABEL_INACTIVE' | translate }}"
                                     x-ng-show="!isActivated(mailActivation)"></i>
