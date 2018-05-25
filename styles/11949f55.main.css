@@ -15210,3 +15210,9 @@ input:-webkit-autofill:focus {
 .open>.custdropdownManageDomain:hover{
     background:#89aa42;
 }
+.box-body .custUserHeader{
+    color: #212121;
+}
+.box-body .custUserLabel{
+    color: #212121;
+}

@@ -44,10 +44,10 @@
     <tab ng-if="isSuperAdmin" heading="{{'MANAGE_USERS.BOX_TAB_OTHERS.TAB_TITLE' | translate}}" class="lstabs-border">
         <form role="form" id="csvfile">
             <div class="box-body">
-                <h4>{{'MANAGE_USERS.BOX_TAB_OTHERS.EMAIL_MIGRATION_TITLE' | translate}}</h4>
+                <h4 class="custUserHeader">{{'MANAGE_USERS.BOX_TAB_OTHERS.EMAIL_MIGRATION_TITLE' | translate}}</h4>
                 <br>
                 <div class="form-group col-md-6">
-                    <label for="csvDelimiter">{{'MANAGE_USERS.BOX_TAB_OTHERS.SELECT_DELIMITER' | translate}}</label>
+                    <label for="csvDelimiter" class="custUserLabel">{{'MANAGE_USERS.BOX_TAB_OTHERS.SELECT_DELIMITER' | translate}}</label>
                     <select name="csvDelimiter" id="csvDelimiter"
                         class="form-control" ng-model="csvFieldDelimiter">
                         <option value=";">;
@@ -55,8 +55,8 @@
                                 <option value=":">:</select>
                 </div>
                 <div class="form-group">
-                    <label for="fileInputCsv">{{'MANAGE_USERS.BOX_TAB_OTHERS.SELECT_FILE' | translate}}</label>
-                    <input type="file" id="fileInputCsv"
+                    <label for="fileInputCsv" class="custUserLabel">{{'MANAGE_USERS.BOX_TAB_OTHERS.SELECT_FILE' | translate}}</label>
+                    <input type="file" id="fileInputCsv" class="custUserLabel"
                         required>
                     <p class="help-block">{{'MANAGE_USERS.BOX_TAB_OTHERS.SELECT_FILE_HELP' | translate}}</p>
                 </div>
